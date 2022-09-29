@@ -1,0 +1,25 @@
+Package: ggalttext
+Title: Generate Alt Text for ggplot2
+Version: 0.0.1
+Authors@R: 
+    person(given = "Nicola",
+           family = "Rennie",
+           role = c("aut", "cre"),
+           email = "nrennie35@gmail.com")
+Description: Given a plot constructed with 'ggplot2', this package generates alternative text 
+  describing the plot constructed.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports:
+  ggplot2,
+  glue,
+  stringr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Config/Needs/website: nrennie/nrenniepkgdown
+URL: https://nrennie.github.io/ggalttext/
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Suggests: 
+    knitr,
+    rmarkdown

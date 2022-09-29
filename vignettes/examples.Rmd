@@ -1,0 +1,52 @@
+---
+title: "Examples"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Examples}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(ggalttext)
+library(ggplot2)
+```
+
+```{r}
+g1 <- ggplot(data = mtcars,
+            mapping = aes(x = mpg,
+                          y = disp)) +
+  geom_point()
+generate_alt_text(g1)
+
+g2 <- ggplot(data = mtcars,
+             mapping = aes(x = mpg,
+                           y = disp)) +
+  geom_point() +
+  geom_line()
+generate_alt_text(g2)
+
+g3 <- ggplot(data = mtcars,
+             mapping = aes(x = mpg,
+                           y = disp)) +
+  geom_point() +
+  geom_line() +
+  labs(title = "Plot title",
+       subtitle = "A subtitle giving some more explanation.",
+       alt = "Some of my own alt text.")
+generate_alt_text(g3)
+
+g4 <- ggplot(data = mtcars) +
+  geom_point(mapping = aes(x = mpg,
+                           y = disp)) +
+  geom_line(mapping = aes(x = mpg,
+                          y = wt))
+generate_alt_text(g4)
+```

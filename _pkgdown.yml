@@ -1,0 +1,5 @@
+url: https://nrennie.github.io/ggalttext/
+template:
+  package: nrenniepkgdown
+  bootstrap: 5
+

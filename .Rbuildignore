@@ -1,0 +1,10 @@
+^ggalttext\.Rproj$
+^\.Rproj\.user$
+^LICENSE\.md$
+.github
+.lintr
+_pkgdown.yml
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^\.github$
