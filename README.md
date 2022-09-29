@@ -2,8 +2,7 @@
   [![R-CMD-check](https://github.com/nrennie/ggalttext/workflows/R-CMD-check/badge.svg)](https://github.com/nrennie/ggalttext/actions)
 <!-- badges: end -->
 
-
-# ggalttext
+# ggalttext <img src="man/figures/logo.png" align="right" width="120" />
 
 An R package for generating alt text from a ggplot object.
 
